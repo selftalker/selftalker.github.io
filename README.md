@@ -6,6 +6,6 @@ Talk to yourself.
 
 Use left-shift and right-shift to switch between yourself and your other self.
 
-Access the same or bookmark https://selftalker.github.io/
+Access the same or bookmark at https://selftalker.github.io/ and https://nitincodery.github.io/selftalker/
 
 Enjoy.

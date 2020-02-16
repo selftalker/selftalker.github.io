@@ -1,0 +1,207 @@
+<html lang="en">
+   <head>
+      <style type="text/css">.styles_overlay__CLSq- {
+         background: rgba(0, 0, 0, 0.75);
+         display: flex;
+         align-items: flex-start;
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         overflow-y: auto;
+         overflow-x: hidden;
+         z-index: 1000;
+         padding: 1.2rem;
+         }
+         .styles_overlayCenter__YHoO7 {
+         align-items: center;
+         }
+         .styles_modal__gNwvD {
+         max-width: 800px;
+         position: relative;
+         padding: 1.2rem;
+         background: #ffffff;
+         background-clip: padding-box;
+         box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+         margin: auto;
+         }
+         .styles_closeButton__20ID4 {
+         position: absolute;
+         top: 14px;
+         right: 14px;
+         border: none;
+         padding: 0;
+         background-color: transparent;
+         display: flex;
+         }
+         .styles_closeIcon__1QwbI {
+         }
+         .styles_transitionEnter__3j_-a {
+         opacity: 0.01;
+         }
+         .styles_transitionEnterActive___eQs7 {
+         opacity: 1;
+         transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
+         }
+         .styles_transitionExit__1KmEf {
+         opacity: 1;
+         }
+         .styles_transitionExitActive__1nQXw {
+         opacity: 0.01;
+         transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
+         }
+      </style>
+      <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+      <meta charset="utf-8">
+      <link rel="shortcut icon" href="logo.png">
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <meta name="theme-color" content="#000000">
+      <link rel="manifest" href="manifest.json">
+      <title>Selftalker</title>
+      <meta property="og:title" content="Selftalker">
+      <meta property="og:description" content="Sometimes you need to talk with yourself">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="index.html">
+      <meta property="og:image" content="logo.png">
+      <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-81907006-3"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-81907006-3")</script>
+      <link href="static/css/main.9053659c.chunk.css" rel="stylesheet">
+      <style type="text/css" id="joyride-beacon-animation">
+         @keyframes joyride-beacon-inner {
+         20% {
+         opacity: 0.9;
+         }
+         90% {
+         opacity: 0.7;
+         }
+         }
+         @keyframes joyride-beacon-outer {
+         0% {
+         transform: scale(1);
+         }
+         45% {
+         opacity: 0.7;
+         transform: scale(0.75);
+         }
+         100% {
+         opacity: 0.9;
+         transform: scale(1);
+         }
+         }
+      </style>
+      <style id="dark-reader-style" type="text/css">@media screen {
+         /* Leading rule */
+         html {
+         -webkit-filter: invert(100%) hue-rotate(180deg) contrast(150%) !important;
+         filter: invert(100%) hue-rotate(180deg) contrast(150%) !important;
+         }
+         /* Reverse rule */
+         img,
+         video,
+         :not(object):not(body)>embed,
+         object,
+         svg image,
+         [style*="background:url"],
+         [style*="background-image:url"],
+         [style*="background: url"],
+         [style*="background-image: url"],
+         [background],
+         twitterwidget {
+         -webkit-filter: invert(100%) hue-rotate(180deg) !important;
+         filter: invert(100%) hue-rotate(180deg) !important;
+         }
+         [style*="background:url"] *,
+         [style*="background-image:url"] *,
+         [style*="background: url"] *,
+         [style*="background-image: url"] *,
+         input,
+         [background] *,
+         img[src^="https://s0.wp.com/latex.php"],
+         twitterwidget .NaturalImage-image {
+         -webkit-filter: none !important;
+         filter: none !important;
+         }
+         .compatibility-with-darkreader-below-4-3-3 {
+         background: white !important;
+         }
+         /* Text contrast */
+         html {
+         text-shadow: 0 0 0 !important;
+         }
+         /* Full screen */
+         :-webkit-full-screen, :-webkit-full-screen * {
+         -webkit-filter: none !important;
+         filter: none !important;
+         }
+         :-moz-full-screen, :-moz-full-screen * {
+         -webkit-filter: none !important;
+         filter: none !important;
+         }
+         :fullscreen, :fullscreen * {
+         -webkit-filter: none !important;
+         filter: none !important;
+         }
+         /* Page background */
+         html {
+         background: rgb(0,0,0) !important;
+         }
+         /* Custom rules */
+         .compatibility-with-darkreader-below-4-3-3 {
+         background: white !important;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root">
+         <div class="App light">
+            <div class="react-joyride">
+               <div class="react-joyride__step"><span></span></div>
+            </div>
+            <h1>Selftalker</h1>
+            <p class="desc">Sometimes you need to talk with yourself</p>
+            <div class="chat">
+               <div class="chat_messages" id="chat_messages">
+                  <div class="left message">Hi! How are you?</div>
+                  <div class="right message">Hello! Much better now that you are with me.</div>
+                  <div class="left message">Use left-shift to be me.</div>
+                  <div class="right message">No! press right-shift and be you.</div>
+               </div>
+               <div class="chat_input"><input class="chat_input" id="chat_input" placeholder="Write a message..."><span class="chat_selector" role="img">?</span></div>
+            </div>
+         </div>
+      </div>
+      <script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={1:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="index.html";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="static/js/2.0a71ae22.chunk.js"></script><script src="static/js/main.2da136b4.chunk.js"></script>
+      <div id="react-joyride-portal"></div>
+      <div id="react-joyride-step-0" style="z-index: 100;">
+         <div class="__floater" style="display: inline-block; filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 3px); max-width: 100%; opacity: 0; position: absolute; transition: opacity 0.3s ease 0s; visibility: hidden; z-index: 100; padding: 16px 0px 0px; will-change: transform; top: 0px; left: 0px; transform: translate3d(209px, 140px, 0px);" x-placement="bottom">
+            <div class="__floater__body">
+               <div class="react-joyride__tooltip" aria-modal="true" role="alertdialog" style="background-color: rgb(255, 255, 255); border-radius: 5px; box-sizing: border-box; color: rgb(51, 51, 51); font-size: 16px; max-width: 100%; padding: 15px; position: relative; width: 380px;">
+                  <div style="line-height: 1.4; text-align: center;">
+                     <div style="padding: 20px 10px;">We communicate with people a lot, but no one can understand us better than we do. Sometimes it's hard to talk to yourself in the head, but we've tried to make it clear...</div>
+                  </div>
+                  <div style="align-items: center; display: flex; justify-content: flex-end; margin-top: 15px;">
+                     <div style="flex: 1 1 0%;"><button type="button" aria-live="off" aria-label="Skip" data-action="skip" role="button" title="Skip" style="background-color: transparent; border: 0px; border-radius: 0px; color: rgb(51, 51, 51); cursor: pointer; font-size: 14px; line-height: 1; padding: 8px; -webkit-appearance: none;">Skip</button></div>
+                     <button type="button" aria-label="Next" data-action="primary" role="button" title="Next" style="background-color: rgb(255, 0, 68); border: 0px; border-radius: 4px; color: rgb(255, 255, 255); cursor: pointer; font-size: 16px; line-height: 1; padding: 8px; -webkit-appearance: none;"><span>Next (1/5)</span></button>
+                  </div>
+                  <button type="button" aria-label="Close" data-action="close" role="button" title="Close" style="background-color: transparent; border: 0px; border-radius: 0px; cursor: pointer; font-size: 16px; line-height: 1; padding: 15px; -webkit-appearance: none; position: absolute; right: 0px; top: 0px;">
+                     <svg width="14px" height="14px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                        <g>
+                           <path d="M8.13911129,9.00268191 L0.171521827,17.0258467 C-0.0498027049,17.248715 -0.0498027049,17.6098394 0.171521827,17.8327545 C0.28204354,17.9443526 0.427188206,17.9998706 0.572051765,17.9998706 C0.71714958,17.9998706 0.862013139,17.9443526 0.972581703,17.8327545 L9.0000937,9.74924618 L17.0276057,17.8327545 C17.1384085,17.9443526 17.2832721,17.9998706 17.4281356,17.9998706 C17.5729992,17.9998706 17.718097,17.9443526 17.8286656,17.8327545 C18.0499901,17.6098862 18.0499901,17.2487618 17.8286656,17.0258467 L9.86135722,9.00268191 L17.8340066,0.973848225 C18.0553311,0.750979934 18.0553311,0.389855532 17.8340066,0.16694039 C17.6126821,-0.0556467968 17.254037,-0.0556467968 17.0329467,0.16694039 L9.00042166,8.25611765 L0.967006424,0.167268345 C0.745681892,-0.0553188426 0.387317931,-0.0553188426 0.165993399,0.167268345 C-0.0553311331,0.390136635 -0.0553311331,0.751261038 0.165993399,0.974176179 L8.13920499,9.00268191 L8.13911129,9.00268191 Z" fill="#333"></path>
+                        </g>
+                     </svg>
+                  </button>
+               </div>
+               <div class="__floater__arrow" style="pointer-events: none; position: absolute; width: 100%; left: 0px; right: 0px; height: 16px; top: 0px;">
+                  <span style="display: inline-flex; position: absolute; margin-left: 8px; margin-right: 8px; left: 166px;">
+                     <svg width="32" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="32,16 16,0 0,16" fill="#fff"></polygon>
+                     </svg>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

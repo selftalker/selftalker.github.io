@@ -1,0 +1,265 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.App {
+	min-height: 400px;
+	height: 100vh
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+	padding: 5px;
+	border-radius: 3px;
+	background: #e1e1e1
+}
+
+h1 {
+	margin: 0;
+	padding: 20px 0
+}
+
+.chat {
+	-webkit-filter: none;
+	filter: none;
+	max-width: 500px;
+	margin: 0 auto 20px;
+	border: 1px solid;
+	padding: 10px 10px 5px;
+	border-radius: 5px
+}
+
+.chat,
+.chat_messages {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column
+}
+
+.chat_messages {
+	overflow: scroll;
+	-webkit-scroll-snap-type: none;
+	-ms-scroll-snap-type: none;
+	scroll-snap-type: none;
+	height: 60vh;
+	padding-right: 10px
+}
+
+.message {
+	border: 1px solid;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	max-width: 70%
+}
+
+.left {
+	-webkit-align-self: flex-start;
+	align-self: flex-start;
+	text-align: left
+}
+
+.right {
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+	text-align: right
+}
+
+.chat_input {
+	display: -webkit-flex;
+	display: flex
+}
+
+input.chat_input {
+	margin: 10px 0;
+	font-size: 15px;
+	border-radius: 3px;
+	border: 2px solid;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	-webkit-flex-grow: 2;
+	flex-grow: 2
+}
+
+.chat_selector {
+	-webkit-justify-content: center;
+	justify-content: center;
+	font-size: 30px;
+	cursor: pointer;
+	padding: 13px
+}
+
+.buttons,
+.chat_selector {
+	display: -webkit-flex;
+	display: flex
+}
+
+.buttons {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	line-height: 1;
+	font-size: 25px
+}
+
+.buttons * {
+	cursor: pointer;
+	padding: 0 5px
+}
+
+button {
+	font-size: 16px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	background-color: #5c9cf5;
+	color: #fff;
+	margin: 0;
+	padding: 4px 20px;
+	font-weight: 700
+}
+
+@media (max-width:700px) {
+	h1 {
+		font-size: 25px;
+		display: -webkit-flex;
+		display: flex;
+		padding-left: 20px
+	}
+	.chat_messages {
+		height: 40vh
+	}
+}
+
+.light.App {
+	background: url(../media/bg.dd57b49a.jpg)
+}
+
+.light .chat {
+	background: url(../media/chat.c6da95b7.jpg)
+}
+
+.light .chat,
+.light .message {
+	border-color: #ccc
+}
+
+.light .left {
+	background: #fff
+}
+
+.light .right {
+	background: #dbffbb
+}
+
+.light .chat_input {
+	border-color: #ccc
+}
+
+.dark.App {
+	background: url(../media/bg_dark.72dfcab3.png)
+}
+
+.dark .chat {
+	background: url(../media/chat_dark.73a38581.png);
+	border-color: #364c64
+}
+
+.dark h1,
+.dark p {
+	color: #fff
+}
+
+.dark .message {
+	border-color: #525252;
+	color: #fff
+}
+
+.dark .left {
+	background: #22303f
+}
+
+.dark .right {
+	background: #3f6b95
+}
+
+.dark .chat_input {
+	border-color: #22303f
+}
+
+.dark input {
+	background: #17202a;
+	color: #fff;
+	border: 1px solid
+}
+
+.dark input::-webkit-input-placeholder {
+	color: #abbbcb
+}
+
+.dark input:-ms-input-placeholder {
+	color: #abbbcb
+}
+
+.dark input:-moz-placeholder,
+.dark input::-moz-placeholder {
+	color: #abbbcb
+}
+
+.App {
+	text-align: center
+}
+
+.App-logo {
+	-webkit-animation: App-logo-spin 20s linear infinite;
+	animation: App-logo-spin 20s linear infinite;
+	height: 40vmin;
+	pointer-events: none
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: #fff
+}
+
+.App-link {
+	color: #61dafb
+}
+
+@-webkit-keyframes App-logo-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+
+@keyframes App-logo-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}

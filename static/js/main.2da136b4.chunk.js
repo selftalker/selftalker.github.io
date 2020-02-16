@@ -77,6 +77,9 @@
                             }, {
                                 type: "right",
                                 text: "No! press right-shift and be you."
+                            }, {
+                                type: "right",
+                                text: "Also, press Esc anytime to clear all our secrets, while typing."
                             }]
                         }, a.handleInput = a.handleInput.bind(Object(m.a)(a)), a
                     }
@@ -140,6 +143,9 @@
                                 placeholder: "Write a message...",
                                 onKeyPress: function(t) {
                                     "Enter" === t.key && e.handleInput(t)
+                                },
+                                onKeyDown: function(t) {
+                                	"Escape" === t.key && e.handleClear()
                                 }
                             }), o.a.createElement("span", {
                                 className: "chat_selector",
@@ -147,9 +153,9 @@
                                 role: "img"
                             }, "left" === this.state.inputStatus ? "\u2b05\ufe0f" : "\u27a1\ufe0f"))), o.a.createElement("div", {
                                 className: "buttons"
-                            }, o.a.createElement("h5", {
+                            }, o.a.createElement("h7", {
                                 onClick: this.handleClear,
-                            }, "Clear Chat")))
+                            }, "Clear")))
                         }
                     }]), t
                 }(n.Component));
